@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Input your ID and Password."
-AuthUserFile https://github.com/Tiara9787323/24summer.git.htpasswd
-require valid-user
