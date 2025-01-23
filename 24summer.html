@@ -9,12 +9,17 @@
     <title>24summer</title>
 
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            max-width: 100vw;
+            font-family: cursive;
+        }
 
         body{
             color: whitesmoke;
             background-color: #004d25;
             font-size: 18px;
-            padding: 15px;
             background: repeating-linear-gradient(
                 -45deg,
                 whitesmoke,
@@ -24,63 +29,89 @@
             );
         }
 
-        .stadiotour li{
-            display:inline-block;
-            margin:12px 3px;
+        #tokyo{
+            position: relative;
         }
 
-        .stadiotour{
-            list-style-type: none;
+        #tokyo p{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
         }
 
-        .stadiotour li a{
-            text-decoration: none;
-            background-color: cadetblue;
-            color: white;
-            padding: 1em;
-            font-size: 15px;
+        nav{
+            position: sticky;
+            position: fited;
+            height: 60px;
+            background: #333;
+            padding: 20px;
+            box-sizing: border-box;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            z-index: 1000;
+        }
+
+
+        .menu{
+            display: flex;
+        }
+
+        .menu li{
+            list-style: none;
+            margin-left: 40px;
+        }
+
+        .menu li a{
+            color: #B78D4A;
             font-weight: bold;
-            text-align: center;
-            border: solid 1px;
+            text-decoration: none;
         }
 
-        nav ul li a:hover{
-            color: aquamarine;
+        .menu li a:hover{
+            color: #F0E475;
+            border-bottom: 3px solid #F0E475;
+        }
+
+        .other h3{
+            margin-top: 30px;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            background-color: #004d25;
+            width: fit-content;
         }
 
         .outsidephoto{
             border: solid 1px;
             display: flex;
             overflow-x: scroll;
-            margin-top: 25px;
         }
 
         .firstphoto{
             border: solid 1px;
             display: flex;
             overflow-x: scroll;
-            margin-top: 25px;
         }
 
         .gardenphoto{
             border: solid 1px;
             display: flex;
             overflow-x: scroll;
-            margin-top: 25px;
         }
 
         .experiencephoto{
             border: solid 1px;
             display: flex;
             overflow-x: scroll;
-            margin-top: 25px;
         }
 
         .secondphoto{
             border: solid 1px;
             display: flex;
             overflow-x: scroll;
-            margin-top: 25px;
         }
 
         .pictures{
@@ -90,27 +121,32 @@
         }
         
     </style>
-
 </head>
 
 <body>
-    <section>
-        <h1>Studio Tour Tokyo</h1>
-    </section>
+    <header id="tokyo">
+        <img src="o1.jpg">
+        <p style="font-size: 50px; font-weight: 500; color:khaki; 
+        -webkit-text-stroke: 2px #333;">
+            The making of Harry Potter<br>
+            Studio Tour Tokyo</p>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href=#outside>Outside</a></li>
+            <li><a href=#first>First half</a></li>
+            <li><a href=#garden>Garden</a></li>
+            <li><a href=#second>Second half</a></li>
+            <li><a href=#experience>Experience</a></li>
+        </ul>
+    </nav>
+    
 
     <section>
        <div class="other">
-            <nav>
-                <ul class="stadiotour">
-                    <li><a href=#outside>外</a></li>
-                    <li><a href=#first>前半</a></li>
-                    <li><a href=#garden>中庭</a></li>
-                    <li><a href=#second>後半</a></li>
-                    <li><a href=#experience>体験系</a></li>
-                </ul>
-            </nav>
-
             <div id="outside">
+                <h3>Outside</h3>
                 <div class="outsidephoto">
                     <img src="o7.JPG" class="pictures">
                     <img src="o6.JPG" class="pictures">
@@ -123,6 +159,7 @@
             </div>
         
             <div id="first">
+                <h3>First half</h3>
                 <div class="firstphoto">
                     <img src="f1.JPG" class="pictures">
                     <img src="f9.JPG" class="pictures">
@@ -158,6 +195,7 @@
             </div>
 
             <div id="garden">
+                <h3>Garden</h3>
                 <div class="gardenphoto">
                     <img src="g1.JPG" class="pictures">
                     <img src="g13.JPG" class="pictures">
@@ -177,6 +215,7 @@
             </div>
 
             <div id="second">
+                <h3>Second half</h3>
                 <div class="secondphoto">
                     <img src="s1.JPG" class="pictures">
                     <img src="s2.JPG" class="pictures">
@@ -213,6 +252,7 @@
             </div>
 
             <div id="experience">
+                <h3>Experience</h3>
                 <div class="experiencephoto">
                     <img src="e1.JPG" class="pictures">
                     <img src="e2.JPG" class="pictures">

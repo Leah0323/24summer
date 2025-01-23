@@ -10,10 +10,7 @@
         *{
             margin: 0;
             padding: 0;
-        }
-
-        body{
-        margin: 0;
+            max-width: 100vw;
         }
 
         :root{
@@ -174,10 +171,11 @@
         .box{
             width: 50vh;
             text-align: center;
-            background-color: #fff;
+            background-color: rgba(255,255,255,0.75);
             border: 1px solid #333;
             padding: 1em;
             box-sizing: border-box;
+            height: fit-content;
         }
 
         section .box h3 {
@@ -189,9 +187,18 @@
             width: 45vh;
         }
 
-        section .box figcaption{
-            text-align: justify;
-            margin-top: 1em;
+        h2{
+            padding-left: 15px;
+            padding: 10px;
+        }
+
+        #studio{
+            font-family: cursive;
+        }
+
+        .more{
+            font-size: 20px; 
+            padding-left: 10px;
         }
 
     </style>
@@ -219,7 +226,7 @@
 
     <h1 style="padding: 200px;">Memory of Tiara</h1>
     
-    <section id="home" style="background-color: darkturquoise;">
+    <section id="home" style="background-color:cadetblue;">
         <h2>Home</h2>
 
         <div class="note">
@@ -241,23 +248,23 @@
     </section>
     
     <section id="studio" style="background-color: darkgray;">
-        <h2>Studio Tour Tokyo</h2>
+        <h2 style="background-color: dimgray; color:azure;">Studio Tour Tokyo</h2>
 
         <div class="gallery">
             <section class="box">
-                <h3>彩果</h3>
+                <h3>雨が降っているハグリッドの小屋</h3>
                 <figure><img src="iroka24s.jpg"></figure>
-                <figcaption>雨が降っているハグリッドの小屋</figcaption>
             </section>
 
             <section class="box">
-                <h3>彩華</h3>
+                <h3>ホグワーツの廊下で歓談中</h3>
                 <figure><img src="ayaka24s.jpg"></figure>
-                <figcaption>ホグワーツの廊下で歓談中</figcaption>
             </section>
         </div>
 
-        <a href="24summer.html" style="font-size: 20px; color: white; padding-left: 10px;">More (Click here)</a>
+        <div class="more">
+            <a href="24summer.html" style="color: white;">More (Click here)</a>
+        </div>    
     </section>
 
     <section id="kyoto">
